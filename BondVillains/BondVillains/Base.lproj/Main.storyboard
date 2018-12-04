@@ -73,7 +73,7 @@
         <!--Villain DetailVC-->
         <scene sceneID="HKg-FY-kql">
             <objects>
-                <viewController storyboardIdentifier="villainDetailVC" id="cNI-iK-hu6" customClass="VillainDetailVC" customModule="BondVillains" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="villainDetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cNI-iK-hu6" customClass="VillainDetailVC" customModule="BondVillains" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g2N-zQ-0sn"/>
                         <viewControllerLayoutGuide type="bottom" id="aAx-2L-7tE"/>

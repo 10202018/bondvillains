@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreData
+import CoreAudio
 
 // MARK: - ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 
@@ -16,6 +18,9 @@ class VillainListViewController: UIViewController, UITableViewDataSource, UITabl
     // Get ahold of some villains, for the table
     // This is an array of Villain instances
     let allVillains = Villain.allVillains
+    override func viewDidLoad() {
+        
+    }
     
     // Get access to the Villain Detail VC
     let villainDetailVC: VillainDetailVC! = VillainDetailVC()
@@ -51,5 +56,6 @@ class VillainListViewController: UIViewController, UITableViewDataSource, UITabl
         let villainDetailVC = self.storyboard!.instantiateViewController(withIdentifier: "villainDetailVC") as! VillainDetailVC
         villainDetailVC.villain = self.allVillains[(indexPath as NSIndexPath).row]
         self.navigationController!.pushViewController(villainDetailVC, animated: true)
+        
     }
 }
